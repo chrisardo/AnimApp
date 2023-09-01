@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListaActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btnIcoAtras"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:onClick="atras"
+            android:clickable="true"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/ic_atras" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolboar"
+            android:layout_width="match_parent"
+            android:theme="@style/ToolBar"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="-15dp">
+            <RelativeLayout
+                android:id="@+id/idLayoutFondo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp">
+                <ImageView
+                    android:id="@+id/im"
+                    android:layout_width="60dp"
+                    android:layout_height="49dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/animal" />
+
+                <TextView
+                    android:id="@+id/nivel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="Listado de animales"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

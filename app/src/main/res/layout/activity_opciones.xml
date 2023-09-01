@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OpcionesActivity">
+    <RelativeLayout
+        android:id="@+id/idLayoutFondo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="52dp"
+            android:src="@drawable/animal" />
+
+        <ImageButton
+            android:id="@+id/btnIcoAtras"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:clickable="true"
+            android:background="@color/colorTransparente"
+            android:src="@drawable/ic_atras" />
+
+        <TextView
+            android:id="@+id/nivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-6dp"
+            android:layout_marginLeft="-6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/im"
+            android:layout_toRightOf="@+id/im"
+            android:gravity="center"
+            android:text="Opciones"
+            android:textColor="@android:color/white"
+            android:textSize="22dp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/LAcerca"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l1"
+        android:background="@drawable/btninicio"
+        android:layout_margin="12dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iAvatar"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:src="@drawable/acerca"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/iNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acerca de"
+            android:textSize="24dp"
+            android:textColor="#fff"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/instruccion"
+        android:layout_below="@id/LAcerca"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:onClick="instruccion"
+        android:background="@drawable/btninicio"
+        android:layout_margin="12dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/idinstru"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:src="@drawable/instru"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/txinstru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instrucción"
+            android:textSize="24dp"
+            android:textColor="#fff"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/compartir"
+        android:layout_below="@id/LAcerca"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:onClick="compartir"
+        android:background="@drawable/btninicio"
+        android:layout_margin="12dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/idcompar"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_compartir"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/txcompar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compartir juego"
+            android:textSize="24dp"
+            android:textColor="#fff"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+</LinearLayout>

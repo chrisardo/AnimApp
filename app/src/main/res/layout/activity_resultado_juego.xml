@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultadoJuegoActivity">
+    <RelativeLayout
+        android:id="@+id/idLayoutFondo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_cuadrado"
+        android:layout_marginTop="-70dp"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginRight="-40dp">
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/animal" />
+        <TextView
+            android:id="@+id/txNombreJugador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Christian"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/colorBlanco"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/avaImage"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/animal" />
+    <TextView
+        android:id="@+id/txtGanoPer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="FELICITACIONES!! Resolviste todo :)"
+        android:layout_below="@+id/avaImage"
+        android:textColor="#fff"
+        android:layout_marginTop="6dp"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/idLayoutFondo">
+        <TextView
+            android:id="@+id/txResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtResultados"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="#2196F3"
+            android:text="RESULTADOS"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtPalabrasCorrectas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtResultados"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Tipo de juego"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txNivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPalabrasCorrectas"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:text="Operaciones matematicas"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtPalabrasIncorrectas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txNivel"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Puntaje"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtPuntaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPalabrasIncorrectas"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:text="0"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/irInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@color/colorPrimaryDark"
+        android:src="@drawable/ic_home"/>
+
+    <!--<com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewresul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8302868983775944/9233941704" />-->
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">AnimApp</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="et_nombre">Digite su nombre</string>
+    <string name="boton">Registrarse</string>
+    <string name="boton1">Acerca de</string>
+    <string name="boton2">Salir</string>
+    <string name="boton4">Aciertos</string>
+    <string name="txtnivel1">
+        Se presentarán operaciones tipo suma, resta y multiplicación...
+    </string>
+    <string name="txtnivel2">
+        Se mostrará 4 botones, tendrás 3 vidas para adivinar todos los animales...
+    </string>
+    <string name="txtReigstro">
+        Indique si desea registrar un nuevo jugador, puedes elegir su avatar.
+    </string>
+    <string name="txtSeleccionar">
+        Puedes seleccionar uno ya existente, también podrá modificar, eliminar un Jugador desde la opción SELECCIONAR
+    </string>
+
+    <string name="et_vidas">Vidas: </string>
+    <string name="jugador_nombre">Jugador:</string>
+    <string name="total_score">Aciertos: 0</string>
+    <string name="boton_sumar">Verificar</string>
+    <string name="et_respuesta">Respuesta</string>
+    <string name="msg_ganaste">Adivinaste todos los Animales</string>
+    <string name="textAcerca">
+        Se hizo con fines educativo, lo cual ayudará a aprender y reforzar operaciones básicas en matemática, también saber los animales  mediante esta App.
+    </string>
+    <string name="texto_instrucciones_introduccion">
+        AnimApp permite dar a conocer los animales, también a aprender las operaciones básicas de la matemática.
+    </string>
+    <string name="texto_instrucciones_play">
+    Desde aquí podrás medir tu conocimiento de los animales y operaciones básica el test de AnimApp, en el que deberás indicar si el resultado es correcto y adivinar qué animal es....
+    </string>
+    <string name="texto_instrucciones_ajustes">
+        Podrás conocer a los animales y con su sonido que hace cada uno.
+    </string>
+    <string name="texto_instrucciones_ranking">
+      Consulta el ranking de puntos obtenidos en cada partida, a medida que vayas jugando mejorarás tu puntaje...
+    </string>
+    <string name="texto_instrucciones_instrucciones">
+        ¿Aún no te queda claro como funciona la aplicación? No te preocupes, desde aquí podrás regresar a consultar las instrucciones del juego...
+    </string>
+    <string name="texto_instruccion_user">
+        El nombre de usuario es fundamental si quieres probar tu retentiva, ya que éste nos permitirá saber qué usuario ha jugado y cúal es su posición en el ranking, presiona esta opción si quieres ingresar un nuevo jugador...
+    </string>
+    <string name="texto_instruccion_final">
+        Y listo, ahora puedes empezar a jugar, presiona iniciar y prueba tu capacidad!!!
+    </string>
+</resources>

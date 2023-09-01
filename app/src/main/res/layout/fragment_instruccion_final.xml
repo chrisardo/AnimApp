@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFinal"
+    tools:context=".InstruccionFinalFragment">
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="167dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginBottom="277dp"
+        android:src="@drawable/juega" />
+
+    <TextView
+        android:layout_width="255dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="140dp"
+        android:text="@string/texto_instruccion_final"
+        android:textAlignment="center"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnFinInstruccion"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginBottom="82dp"
+        android:background="#00897B"
+        android:text="Terminar"
+        android:textColor="@color/colorBlanco"
+        android:textStyle="bold|italic" />
+</RelativeLayout>

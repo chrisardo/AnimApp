@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GestionJugadorFragment">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/idLayoutFondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="8dp">
+
+            <ImageView
+                android:id="@+id/im"
+                android:layout_width="60dp"
+                android:layout_height="49dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="52dp"
+                android:src="@drawable/animal" />
+
+            <ImageButton
+                android:id="@+id/btnIcoAtras"
+                android:layout_width="60dp"
+                android:layout_height="49dp"
+                android:clickable="true"
+                android:background="@color/colorTransparente"
+                android:src="@drawable/ic_atras" />
+
+            <TextView
+                android:id="@+id/nivel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/im"
+                android:layout_toRightOf="@+id/im"
+                android:gravity="center"
+                android:text="CONSULTA DE JUGADOR"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textStyle="bold|italic" />
+
+            <ImageButton
+                android:id="@+id/btnAyuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorTransparente"
+                android:src="@drawable/ic_ayud" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Seleccione un Jugador :"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerJugadoresId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp" />
+    </LinearLayout>
+</RelativeLayout>

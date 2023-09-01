@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoprinci"
+    tools:context=".InforApp">
+    <LinearLayout
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondoprinci"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/idLayoutFondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondoprinci"
+            android:elevation="8dp">
+            <ImageButton
+                android:id="@+id/btnIcoAtras"
+                android:layout_width="60dp"
+                android:layout_height="49dp"
+                android:onClick="atras"
+                android:clickable="true"
+                android:background="#1E88E5"
+                android:src="@drawable/ic_atras" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_below="@+id/barra"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/animal" />
+
+    <TextView
+        android:id="@+id/textNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="AnimApp"
+        android:layout_below="@id/avatarImage"
+        android:textColor="#FB8C00"
+        android:textSize="32dp"
+        android:layout_marginLeft="140dp"
+        android:textStyle="bold|italic" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/barra">
+
+        <TextView
+            android:id="@+id/txtResultados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idLayoutFondo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="55dp"
+            android:gravity="center"
+            android:text="Acerca De"
+            android:textColor="#000"
+            android:textSize="28dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtResultados"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="@string/textAcerca"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:id="@+id/txtAutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Desarrollado por: CoDevPro"
+            android:textColor="#871616"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:id="@+id/txtorigen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Iquitos - Perú"
+            android:textColor="#FFEB3B"
+            android:textSize="22dp"
+            android:textStyle="bold|italic" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/icoBlog"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/caballo"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/icoYoutube"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/leon"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/icoFace"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jirafa"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/icoInstagram"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/delfin"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:id="@+id/icoTwitter"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gato"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8302868983775944/2303795170">
+    </com.google.android.gms.ads.AdView>-->
+</RelativeLayout>
